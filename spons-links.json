@@ -1,0 +1,69 @@
+{
+    "links": [
+        {   
+            "logo" : "../images/wwf.png",
+            "organization": "World Wildlife Foundation",
+            "link": "https://www.worldwildlife.org/" 
+        },
+        {
+            "logo" : "../images/wcs.png",
+            "organization":"Wildlife Conservation Society",
+            "link":"https://www.wcs.org"
+        },
+        {
+            "logo" : "../images/nc.png",
+            "organization":"The Nature Conservancy",
+            "link":"https://www.nature.org/en-us/"
+        },
+        {
+            "logo" : "../images/jg.png",
+            "organization":"Jane Goodall Institute",
+            "link":"https://www.janegoodall.org/"
+        },
+        {
+            "logo" : "../images/dow.png",
+            "organization":"Defenders of Wildlife",
+            "link":"https://defenders.org/"
+        },
+        {
+            "logo" : "../images/nwf.png",
+            "organization":"The National Wildlife Federation",
+            "link":"https://www.nwf.org/"
+        },
+        {
+            "logo" : "../images/awf.png",
+            "organization":"The African Wildlife Foundation",
+            "link":"https://www.awf.org/"
+        },
+        {
+            "logo" : "../images/wa.png",
+            "organization":"Wildlife Alliance",
+            "link":"https://www.wildlifealliance.org/"
+        },
+        {
+            "logo" : "../images/acf.png",
+            "organization":"African Conservation Foundation",
+            "link":"https://africanconservation.org/"
+        },
+        {
+            "logo" : "../images/ifaw.png",
+            "organization":"International Fund for Animal Welfare",
+            "link":"https://www.ifaw.org/"
+        },
+        {
+            "logo" : "../images/irf.png",
+            "organization":"International Rhino Foundation",
+            "link":"https://www.rhinos.org/"
+        },
+        {
+            "logo" : "../images/sscs.png",
+            "organization":"Sea Shepherd Conservation Society",
+            "link":"https://www.seashepherd.org/"
+        },
+        {
+            "logo" : "../images/wcn.png",
+            "organization":"Wildlife Conservation Network",
+            "link":"https://www.wildnet.org"
+        }
+    ]
+}

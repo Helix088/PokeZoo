@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/pokefav.png">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body class="home-body">
+    <h1 class="zoo-header">PokéZoo</h1>
+    <nav>
+      <a href="./home.html">Home</a>
+      <a href="./zoo.html">Zoo</a>
+      <a href="./about.html">About</a>
+      <a href="./donate.html">Donate</a>
+    </nav>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <picture class="slide-pic">
+          <img src="../images/mew.jpg" alt="Pokemon Mew" />
+        </picture>
+      </div>
+      <div class="mySlides fade">
+        <picture class="slide-pic">
+          <img src="../images/pokemon-in-the-wild.png" alt="Pokemon Mew" />
+        </picture>
+      </div>
+      <div class="mySlides fade">
+        <picture class="slide-pic">
+          <img src="../images/pokemon.jpg" alt="Pokemon Mew" />
+        </picture>
+      </div>
+      <div class="mySlides fade">
+        <picture class="slide-pic">
+          <img src="../images/pokemon2.jpg" alt="Pokemon Mew" />
+        </picture>
+      </div>
+      <div class="mySlides fade">
+        <picture class="slide-pic">
+          <img src="../images/pokemon-sea.jpg" alt="Pokemon Mew" />
+        </picture>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <h2 class="home-head">Welcome to the Virtual PokéZoo!</h2>
+    <div class="home-content">
+      <div class="figures">
+      <figure>
+        <img src="../images/charizard.png" alt="Placeholder Charizard">
+        <figcaption>Here at the PokéZoo we thrill in the adventure of discovering new species of Pokémon every day. We have over 1000 spieces of Pokémon roaming the zoo at all times. Feel free to explore the wonderful world of Pokémon and get ready for the thrill of a lifetime!</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/charizard.png" alt="Placeholder Charizard">
+        <figcaption>Since this is a virtual Pokémon zoo, you will not be able to pet or see the actual Pokémon. However, you will be able to learn more about each species of Pokémon as you explore the "Zoo" page of this website. If you have any questions, feel free to leave them in the comments section of the individual Pokémon's page.</figcaption>
+      </figure>
+      </div>
+      <div class="surveillance">
+        <h3 id="surv-head">Watch animals live!</h3>
+        <ul id="surveillance-links"></ul>
+      </div>
+      <div class="sponsors">
+        <h3 id="spons-head">Thank you to our Sponsors!</h3>
+        <ul id="sponsor-links"></ul>
+      </div>
+    </div>
+  </body>
+  <footer>&#169; 2023 Chase Patterson - Virtual PokéZoo</footer>
+  <script src="../js/slideshow.js"></script>
+  <script src="../js/display-spons-links.js"></script>
+  <script src="../js/display-surv-links.js"></script>
+</html>

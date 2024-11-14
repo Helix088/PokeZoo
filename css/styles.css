@@ -1,0 +1,1024 @@
+.head-foot-color,
+.nav-color,
+.dets-color,
+.form-color {
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.head-foot-color {
+  background-color: crimson;
+}
+
+.nav-color {
+  background-color: #f4f4f4;
+}
+
+.dets-color {
+  background-color: #bdbdbd;
+}
+
+.form-color {
+  background-color: #f4f4f4;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+
+body {
+  margin: 0;
+  background-color: rgb(189, 189, 189);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.zoo-header {
+  background-color: crimson;
+  font-size: 3rem;
+  font-family: "Zen Tokyo Zoo", sans-serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: -0.1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-family: "Zen Tokyo Zoo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: -2rem;
+  width: 100%;
+  word-spacing: 10rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 1.2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+nav a:hover {
+  background-color: crimson;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 3rem;
+}
+
+/***************Home Page******************/
+
+picture {
+  display: inline;
+  text-align: center;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #bbb;
+}
+
+.mySlides {
+  display: none;
+}
+
+.herodiv img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.home-head {
+  font-size: 2rem;
+}
+
+.home-body {
+  text-align: center;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+figure,
+.sponsors,
+.surveillance {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+}
+
+figure {
+  padding: 2rem;
+  width: 60%;
+}
+
+figure img {
+  width: 80%;
+}
+
+.sponsors,
+.surveillance {
+  width: 60%;
+}
+
+#spons-head,
+#surv-head {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: black;
+  letter-spacing: 0.1rem;
+}
+
+.spons-logo {
+  width: 90px;
+  height: 90px;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sponsor-links,
+#surveillance-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sponsor-links li,
+#surveillance-links li {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sponsor-links a,
+#surveillance-links a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+#sponsor-links a:hover,
+:visited,
+:active,
+:focus,
+#surveillance-links a:hover,
+:visited,
+:active,
+:focus {
+  color: black;
+}
+
+/***************Home Page******************/
+
+/***************PokeZoo******************/
+
+#pokemonlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  list-style: none;
+  background: linear-gradient(
+    to top,
+    #f4f4f4 0%,
+    #f4f4f4 50%,
+    crimson 50%,
+    crimson 100%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  color: #222;
+  transition: transform 0.5s;
+  text-align: center;
+  border-radius: 50%;
+  width: 230px;
+}
+
+.card:hover {
+  transform: scale(0.7);
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  z-index: 3;
+  position: relative;
+}
+
+.circle {
+  background-color: black;
+  position: absolute;
+  top: 115px;
+  right: 124px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.circletwo {
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 126px;
+  right: 134px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.circlethree {
+  background-color: #f4f4f4;
+  border: 1px solid black;
+  position: absolute;
+  top: 130px;
+  right: 138px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.line {
+  background-color: black;
+  position: inherit;
+  top: -50px;
+  right: 40px;
+  width: 310px;
+  height: 20px;
+  z-index: 0;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 2px darkred;
+}
+
+.type {
+  text-transform: uppercase;
+}
+
+#next,
+#prev {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+.nextprev {
+  text-align: center;
+  padding: 2rem;
+}
+
+/***************PokeZoo******************/
+
+/***************About Page******************/
+
+.about-body {
+  text-align: center;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-content,
+.creator-info {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  width: 90%;
+}
+
+.about-content p {
+  padding-bottom: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+#pokedex-circle {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #bdbdbd;
+  border-radius: 50%;
+  background-color: rgb(70, 135, 255);
+}
+
+#little-circle1,
+#little-circle2,
+#little-circle3 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+#little-circle1 {
+  top: -55px;
+  left: 100px;
+}
+
+#little-circle2 {
+  background-color: yellow;
+  top: -69px;
+  left: 125px;
+}
+
+#little-circle3 {
+  background-color: limegreen;
+  top: -83px;
+  left: 150px;
+}
+
+.creator-info {
+  border: 2px solid black;
+  background-color: crimson;
+  border-radius: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 545px;
+}
+
+.creator-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr;
+}
+
+.creator-desc {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-left: 16px;
+}
+
+.creator-desc h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.creator-desc p {
+  background-color: #7bb0c2;
+  margin-right: 1rem;
+  border: 15px solid #717171;
+  border-radius: 5px 5px 5px 20px;
+  padding: 1rem;
+}
+
+.creator-desc strong {
+  font-size: 1.2rem;
+}
+
+.chase-img {
+  width: 80px;
+  height: 80px;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+#gamepad {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #666;
+  border: 10px solid black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#horizontal-line,
+#vertical-line {
+  background-color: #000;
+  width: 60px;
+  height: 15px;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+#horizontal-line {
+  position: relative;
+  top: 25px;
+  left: 3px;
+}
+
+#vertical-line {
+  position: relative;
+  transform: rotate(90deg);
+  top: 2px;
+  left: 3px;
+}
+
+#green-box {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: limegreen;
+  width: 100px;
+  height: 60px;
+  margin-top: 2.4rem;
+  border-radius: 5px;
+}
+
+#pill-button1,
+#pill-button2 {
+  position: relative;
+  width: 36px;
+  height: 7px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#pill-button1 {
+  top: -30px;
+  left: 0;
+}
+
+#pill-button2 {
+  background-color: #7bb0c2;
+  top: -41px;
+  left: 61px;
+}
+
+/***************About Page******************/
+
+/***************Donate Page******************/
+.donate-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form {
+  background-color: #f4f4f4;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.form h3 {
+  margin-left: 2rem;
+}
+
+.form label {
+  margin-left: 3rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form input[type="text"],
+input[type="month"] {
+  width: 50%;
+  margin-left: 3rem;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#ccnum, #expdate, #cvv {
+    max-width: 150px;
+}
+
+.icon-container {
+  margin-left: 3rem;
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.donate-button {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    to top,
+    #f4f4f4 0%,
+    #f4f4f4 50%,
+    crimson 50%,
+    crimson 100%
+  );
+  padding: 3rem;
+  padding-left: 6px;
+  padding-right: 95px;
+  border-radius: 50%;
+  color: #222;
+  color: #f4f4f4;
+  font-size: 1.3rem;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: white;
+  letter-spacing: 0.1rem;
+  line-height: 0rem;
+  width: 50px;
+}
+
+/***************Donate Page******************/
+
+/***************Thank you Page******************/
+.ty-body {
+  text-align: center;
+}
+
+.ty-para {
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pokethanks {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pokeball {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 5px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: fall 0.25s ease-in-out,
+    shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) 3,
+    caught 0.01s ease-in-out 3.8s forwards;
+}
+
+.pokeball::before,
+.pokeball::after {
+  content: "";
+  position: absolute;
+}
+
+.pokeball::before {
+  background: crimson;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.pokeball::after {
+  top: calc(50% - 4px);
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #000;
+}
+
+.pokeball__button {
+  position: absolute;
+  top: 36px;
+  left: 35px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 0 5px black;
+}
+
+.pokeball_circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 2;
+  animation: blink 0.5s alternate 7;
+}
+
+.fa-star {
+  visibility: hidden;
+  position: relative;
+  color: yellow;
+  z-index: 3;
+  top: -100px;
+}
+
+.star1 {
+  animation: move-out-left 0.4s linear 4s forwards;
+}
+
+.star2 {
+  animation: move-up 0.4s linear 4s forwards;
+}
+
+.star3 {
+  animation: move-out-right 0.4s linear 4s forwards;
+}
+
+@keyframes blink {
+  from {
+    background: #eee;
+  }
+  to {
+    background: #e74c3c;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg);
+  }
+  30% {
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg);
+  }
+  60% {
+    transform: translate(10px, 0) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+@keyframes fall {
+  0% {
+    top: -200px;
+  }
+  60% {
+    top: 0;
+  }
+  80% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes caught {
+  from {
+    filter: brightness(100%);
+  }
+  to {
+    filter: brightness(30%);
+  }
+}
+
+@keyframes move-up {
+  0% {
+    visibility: visible;
+    top: -120px;
+    opacity: 0;
+  }
+  40% {
+    top: -160px;
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    top: -120px;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    top: -120px;
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes move-out-left {
+  0% {
+    visibility: visible;
+    top: -120px;
+    left: 0;
+    opacity: 0;
+    transform: rotate(0);
+  }
+  40% {
+    top: -140px;
+    left: -30px;
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    top: -100px;
+    left: -50px;
+    opacity: 1;
+    transform: rotate(-45deg) scale(1.2);
+  }
+  100% {
+    top: -100px;
+    left: -50px;
+    opacity: 0;
+    transform: rotate(-60deg) scale(1);
+  }
+}
+
+@keyframes move-out-right {
+  0% {
+    visibility: visible;
+    top: -120px;
+    left: 0;
+    opacity: 0;
+    transform: rotate(0);
+  }
+  40% {
+    top: -140px;
+    left: 30px;
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    top: -100px;
+    left: 50px;
+    opacity: 1;
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    top: -100px;
+    left: 50px;
+    opacity: 0;
+    transform: rotate(60deg) scale(1);
+  }
+}
+
+/***************Thank You Page******************/
+
+/***************Media Queries******************/
+
+@media screen and (min-width: 17.5rem) {
+    .form input[type="text"] {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+  nav {
+    justify-content: center;
+    flex-direction: row;
+  }
+  #pokemonlist {
+    grid-template-columns: 1fr 1fr;
+  }
+  #sponsor-links,
+  #surveillance-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .creator-desc p {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .about-content {
+    max-width: 50%;
+  }
+
+  .chase-img {
+    width: 120px;
+    height: 120px;
+    margin: 1rem;
+    margin-left: 0;
+  }
+
+  #gamepad {
+    width: 120px;
+    height: 120px;
+  }
+
+  #horizontal-line,
+  #vertical-line {
+    background-color: #000;
+    width: 90px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 0.5rem;
+  }
+
+  #horizontal-line {
+    position: relative;
+    top: 40px;
+    left: 8px;
+  }
+
+  #vertical-line {
+    position: relative;
+    transform: rotate(90deg);
+    top: 14px;
+    left: 8px;
+  }
+  #green-box {
+    width: 120px;
+    height: 80px;
+    margin-top: 3rem;
+  }
+  #pill-button2 {
+    left: 81px;
+  }
+  .form{
+    max-width: 60%;
+  }
+  .form-container-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .billing {
+    grid-column: 1/2;
+  }
+  .payment {
+    grid-column: 2/3;
+  }
+  .form input[type="text"] {
+  width: 70%;
+}
+}
+
+@media screen and (min-width: 70rem) {
+  #pokemonlist {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .home-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  figure {
+    width: 90%;
+  }
+  .figures {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sponsors,
+  .surveillance {
+    width: 90%;
+  }
+  #sponsor-links,
+  #surveillance-links {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  #sponsor-links,
+  #surveillance-links {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/***************Media Queries******************/

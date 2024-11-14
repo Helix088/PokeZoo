@@ -1,0 +1,56 @@
+{
+    "links" : [ 
+        {
+            "animal": "Koalas",
+            "link": "https://zoo.sandiegozoo.org/cams/koala-cam"
+        },
+        {
+            "animal": "Baboons",
+            "link": "https://zoo.sandiegozoo.org/cams/baboon-cam"
+        },
+        {
+            "animal": "Polar Bear",
+            "link": "https://zoo.sandiegozoo.org/cams/polar-cam"
+        },
+        {
+            "animal": "Apes",
+            "link": "https://zoo.sandiegozoo.org/cams/ape-cam"
+        },
+        {
+            "animal": "Tigers",
+            "link": "https://sdzsafaripark.org/cams/tiger-cam"
+        },
+        {
+            "animal": "Platypodes",
+            "link": "https://sdzsafaripark.org/cams/platypus-cam"
+        },
+        {
+            "animal": "Owls",
+            "link": "https://sdzsafaripark.org/cams/burrowing-owl-cams"
+        },
+        {
+            "animal": "Condors",
+            "link": "https://sdzsafaripark.org/cams/condor-cam"
+        },
+        {
+            "animal": "Giraffes",
+            "link": "https://sdzsafaripark.org/cams/giraffe-cam"
+        },
+        {
+            "animal": "Penguins",
+            "link": "https://zoo.sandiegozoo.org/cams/penguin-cam"
+        },
+        {
+            "animal": "Hippos",
+            "link": "https://zoo.sandiegozoo.org/cams/hippo-cam"
+        },
+        {
+            "animal": "Elephants",
+            "link": "https://sdzsafaripark.org/cams/elephant-cam"
+        },
+        {
+            "animal": "Pandas",
+            "link": "https://zoo.sandiegozoo.org/cams/panda-cam-archive"
+        }
+    ]
+}

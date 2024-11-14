@@ -1,0 +1,69 @@
+{
+    "links": [
+        {   
+            "logo" : "../images/wwf.png",
+            "organization": "World Wildlife Foundation",
+            "link": "https://support.worldwildlife.org/site/Donation2?df_id=17557&17557.donation=form1&s_src=AWE2306OQ18299A06704TX&s_subsrc=topnav&_ga=2.229313498.776167199.1670651189-1719392617.1670651189" 
+        },
+        {
+            "logo" : "../images/wcs.png",
+            "organization":"Wildlife Conservation Society",
+            "link":"https://secure.wcs.org/donate/save-wildlife?utm_campaign=stg-evrgr-1tm-ndn_17933049264&utm_medium=cpc&utm_source=google&ms=M_SEM_DON_03_F06_stg-evrgr-1tm-ndn-dtg-allndn-key-compt-responsive-best-halfsuper&utm_source=google&utm_medium=cpc&utm_campaign=stg-evrgr-1tm-ndn_17933049264&utm_term=dtg-allndn-key-compt_139153019185&utm_content=responsive-best-halfsuper_639800653859&gclid=Cj0KCQiA1sucBhDgARIsAFoytUvEvJFgkT_-fGqL5lwZtwpwq5MBRP1o5ZX70E8vmch2Kj7Vk6JDc1MaAvnTEALw_wcB"
+        },
+        {
+            "logo" : "../images/nc.png",
+            "organization":"The Nature Conservancy",
+            "link":"https://preserve.nature.org/page/115621/donate/1?crid=mgzn&en_txn1=p_g.dfa.fd.gtues22.dtd.mb2.br&supporter.appealCode=AHOMQ221102W1SXX00&en_txn8=NewSch.ADPCGO2211PDMZNZZD02Z02-BZUZZ-DGAQ&gclid=Cj0KCQiA1sucBhDgARIsAFoytUtMbPw3GelrDY9CCX1yeTJtDz2BCLO2eBJCB2XQDxmqNeOBlGMyXKYaAnDtEALw_wcB&gclsrc=aw.ds"
+        },
+        {
+            "logo" : "../images/jg.png",
+            "organization":"Jane Goodall Institute",
+            "link":"https://secure.janegoodall.org/give/328356/#!/donation/checkout"
+        },
+        {
+            "logo" : "../images/dow.png",
+            "organization":"Defenders of Wildlife",
+            "link":"https://support.defenders.org/page/37655/donate/1?supporter.appealCode=3WDW2300PAXXX&en_og_source=FY23_Googleads&gclid=Cj0KCQiA1sucBhDgARIsAFoytUt1tL4VMvT0MJ8kKza4Xa94-jzVR3uWhSOp__Nw32oYZV-tRTdVFt4aAjZCEALw_wcB"
+        },
+        {
+            "logo" : "../images/nwf.png",
+            "organization":"The National Wildlife Federation",
+            "link":"https://support.nwf.org/page/46708/donate/1?ea.tracking.id=SRC&gclid=Cj0KCQiA1sucBhDgARIsAFoytUv2Uz7BUdksCSDmaUmYuGl684sz2vh3yCI44Nemf6bHsTlSOXV_F84aApzAEALw_wcB&gclsrc=aw.ds"
+        },
+        {
+            "logo" : "../images/awf.png",
+            "organization":"The African Wildlife Foundation",
+            "link":"https://secure.awf.org/page/113937/donate/1?utm_source=semgpbrbr&utm_medium=cpc&utm_campaign=SEMBrand&supporter.appealCode=B23Q01E01R&gclid=Cj0KCQiA1sucBhDgARIsAFoytUsnwzvR1TVTJ_L8lhI57thaxPp4bb6Lw47cZudXLaJYLr-9yqm4l30aAk4lEALw_wcB"
+        },
+        {
+            "logo" : "../images/wa.png",
+            "organization":"Wildlife Alliance",
+            "link":"https://www.wildlifealliance.org/donate/"
+        },
+        {
+            "logo" : "../images/acf.png",
+            "organization":"African Conservation Foundation",
+            "link":"https://africanconservation.org/donate-now/"
+        },
+        {
+            "logo" : "../images/ifaw.png",
+            "organization":"International Fund for Animal Welfare",
+            "link":"https://secure.ifaw.org/united-states/mission-animal-rescue-2x-impact-rescue-care-animals"
+        },
+        {
+            "logo" : "../images/irf.png",
+            "organization":"International Rhino Foundation",
+            "link":"https://rhinos.org/donate/"
+        },
+        {
+            "logo" : "../images/sscs.png",
+            "organization":"Sea Shepherd Conservation Society",
+            "link":"https://seashepherd.org/dac/"
+        },
+        {
+            "logo" : "../images/wcn.png",
+            "organization":"Wildlife Conservation Network",
+            "link":"https://donate.wildnet.org"
+        }
+    ]
+}
