@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+
 .head-foot-color,
 .nav-color,
 .dets-color,
@@ -22,8 +24,6 @@
 .form-color {
   background-color: #f4f4f4;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
 
 body {
   margin: 0;
@@ -69,11 +69,17 @@ nav a:hover {
 }
 
 footer {
+  background-color: crimson;
+  font-family: "Zen Tokyo Zoo", sans-serif;
+  color: white;
   position: relative;
   text-align: center;
+  font-size: 1.5rem;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-top: 3rem;
 }
 
@@ -287,6 +293,10 @@ figure img {
   list-style: none;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .card {
   position: relative;
   list-style: none;
@@ -412,6 +422,21 @@ button:hover {
 }
 
 /***************PokeZoo******************/
+
+/***************Pokemon Page******************/
+
+.pokemon-page {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+#onePokemon>div>h2,
+#onePokemon>div>p {
+  text-transform: capitalize;
+}
+
+/***************Pokemon Page******************/
 
 /***************About Page******************/
 
@@ -986,7 +1011,10 @@ input[type="month"] {
   }
   .form input[type="text"] {
   width: 70%;
-}
+  }
+  footer{
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 70rem) {

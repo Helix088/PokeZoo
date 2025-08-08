@@ -37,6 +37,7 @@ async function getPokemon(url, offset) {
     image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${
       index + parseInt(offset) + 1
     }.png`,
+    url: data.url,
   }));
   return pokemon;
 }
@@ -56,21 +57,19 @@ async function renderPokemonList(url) {
   pokeList.forEach(function (pokeman) {
     let listItem = document.createElement("li");
     listItem.innerHTML = `
-    <li class="card" onclick="selectPokemon(${pokeman.id})">
+    <a class="card-link" href="pokemon.html?id=${pokeman.id}">
+      <li class="card">
         <img class="card-image" src="${pokeman.image}"/>
         <div class="circle"></div>
         <div class="circletwo"></div>
         <div class="circlethree"></div>
         <div class="line"></div>
         <h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2>
-    </li>
+      </li>
+    </a>
     `;
     pokemonList.appendChild(listItem);
   });
-}
-
-async function renderOnePokemon(url) {
-  
 }
 
 renderPokemonList("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=21");

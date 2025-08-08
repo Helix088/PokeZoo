@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"
       rel="stylesheet"
     />
+    <script src="../js/pokezoo.js"></script>
     <title>Pokémon</title>
   </head>
   <body class="pokemon-body">
@@ -20,7 +21,69 @@
       <a href="./about.html">About</a>
       <a href="./donate.html">Donate</a>
     </nav>
+    <main>
+      <div id="onePokemon"></div>
+      
+      <script>
+        function calculateHeight(heightInMeters) {
+          const convertHeight = heightInMeters / 10;
+          const totalInches = (convertHeight * 39.37);
+          const heightInFeet = Math.floor(totalInches / 12);
+          const heightInInches = totalInches % 12;
+          return `${heightInFeet} ft' ${Math.ceil(heightInInches)} in"`;
+        }
+
+        async function apiFetch(url) {
+          try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(response.statusText);
+            return await response.json();
+          } catch (error) {
+            console.error(error);
+          }
+        }
+
+        async function getPokemonDetails(id) {
+          const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+          const data = await apiFetch(url);
+          return {
+            id: data.id,
+            name: data.name,
+            image: data.sprites.other.home.front_default,
+            types: data.types.map(t => t.type.name).join(", "),
+            height: `${calculateHeight(data.height)}`,
+            weight: `${((data.weight / 10) * 2.205).toFixed(1)} lbs`,
+            abilities: data.abilities.map(a => a.ability.name).join(", "),
+            stats: data.stats.map(s => `${s.stat.name}: ${s.base_stat}`).join("<br>"),
+          };
+        }
+
+        async function renderOnePokemon(id) {
+          const onePokemon = document.getElementById("onePokemon");
+          const pokemon = await getPokemonDetails(id);
+
+          onePokemon.innerHTML = `
+              <div class="pokemon-page">
+
+                <img class="pokemon-image" src="${pokemon.image}" alt="${pokemon.name} Image" />
+                <h2 class="pokemon-name">${pokemon.id}. ${pokemon.name}</h2>
+                <p class="pokemon-type"><strong>Type:</strong> ${pokemon.types}</p>
+                <p class="pokemon-height"><strong>Height:</strong> ${pokemon.height}</p>
+                <p class="pokemon-weight"><strong>Weight:</strong> ${pokemon.weight}</p>
+                <p class="pokemon-abilities"><strong>Abilities:</strong> ${pokemon.abilities}</p>
+                <p class="pokemon-id"><strong>Stats:</strong> <br> ${pokemon.stats}</p>
+              </div>
+            `;
+        }
+
+        // Get ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const pokemonId = urlParams.get("id");
+        if (pokemonId) {
+          renderOnePokemon(pokemonId);
+        }
+      </script>
+    </main>
   </body>
   <footer>&#169; 2023 Chase Patterson - Virtual PokéZoo</footer>
-  <script src="../js/pokezoo.js"></script>
 </html>
